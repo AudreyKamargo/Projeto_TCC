@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: khaki;
+            border-image-width: 20px;
+        background-size: cover;
+        }
+        #board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 5px;
+            margin: 20px auto;
+        }
+
+        .texto {
+          font-size: 25px;
+          text-align: center; 
+          position: fixed;
+          color: #000000;
+          font-family: cursive;
+          transform: translate(0%, -750%);
+          
+      }
+
+        .ccr {
+            background:khaki ;
+            color: khaki;
+            background-color:khaki;
+            transform: translate(0, -400%);
+        }
+        .cor {
+            background: khaki ;
+            color: khaki;
+            background-color:khaki;
+            transform: translate(0, -410%);
+        } 
+
+        h1, p {
+            font-size: 35px;
+            text-align: center; 
+            position: flex;
+          transform: translate(0,-9000);
+        }
+
+        #grade{
+            display: flex;
+            flex-wrap: wrap;
+            width: 520;
+            margin: auto;
+        }
+
+        img{
+            width: auto;
+        }
+
+        /*jogo*/
+
+        .memory-game {
+          width: 640px;
+          height: 640px;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          perspective: 1000px;
+        }
+        
+        .memory-card {
+          width: calc(25% - 10px);
+          height: calc(33.333% - 10px);
+          margin: 5px;
+          position: relative;
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+          transform: scale(1);
+          transform-style: preserve-3d;
+          transition: transform .5s;
+        }
+        
+        .front-face,
+        .back-face {
+          width: 100%;
+          height: 100%;
+          padding: 20px;
+          position: absolute;
+          border-radius: 1px;
+          background: khaki;
+          backface-visibility: hidden;
+        }
+        
+        .front-face {
+          transform: rotateY(180deg);
+        }
+        
+        .back-face {
+          background-image: url('../img/melanc.jpeg');
+          background-color: khaki;
+          backface-visibility: hidden;
+        }
+        
+        .reveal-card {
+          transform: rotateY(180deg);
+        }
+        
+        .disabled-card {
+          filter: saturate(0);
+          opacity: 0;
+        }
+        
+        .memory-card:active {
+          transform: scale(0.97);
+          transition: transform .2s;
+        }
+        
+        .memory-card.flip {
+          transform: rotateY(180deg);
+        }
+        

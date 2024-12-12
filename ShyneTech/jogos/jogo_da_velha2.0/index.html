@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha contra o Computador</title>
+   <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="ccr">
+
+        <a href="/../ShyneTech/jogos.php">       
+            <img src="img/sair.png" alt="Botão de Sair" width="90" height="90">
+        
+        </a>
+     </div>
+    <main>
+  <div class="texto">  <h1>Jogo da Velha</h1> </div>
+  <div class="line"></div>
+    <div id="board">
+        <div class="cell" onclick="makeMove(0, 0)"></div>
+        <div class="cell" onclick="makeMove(0, 1)"></div>
+        <div class="cell" onclick="makeMove(0, 2)"></div>
+        <div class="cell" onclick="makeMove(1, 0)"></div>
+        <div class="cell" onclick="makeMove(1, 1)"></div>
+        <div class="cell" onclick="makeMove(1, 2)"></div>
+        <div class="cell" onclick="makeMove(2, 0)"></div>
+        <div class="cell" onclick="makeMove(2, 1)"></div>
+        <div class="cell" onclick="makeMove(2, 2)"></div>
+    </div>
+   <h2> <p id="status">É a vez do jogador X.</p> </h2>
+</main>
+<input class="cor" type="image" src="img/reiniciar.png"  onClick="window.location.reload ()" alt="Submit" width="90" height="90" >
+<a href="../jogo_da_velha2.0/index.html" ></a>
+    <script src="script.js"></script>
+</body> 
+</html>

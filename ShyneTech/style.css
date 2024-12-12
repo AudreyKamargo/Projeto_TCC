@@ -1,0 +1,670 @@
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+@font-face {
+  font-family: heycomic;
+  src: url(../ShyneTech/font/hey_comic/Hey\ Comic.ttf);
+}
+
+@font-face {
+  font-family: oldnews;
+  src: url(../ShyneTech/font/oldnewspapertypes/OldNewspaperTypes.ttf);
+}
+*/
+body {
+  background-color: white;
+  background-size: cover  ;
+  background-position: center;
+  color: black;
+}
+
+.body {
+  background-color: lightgray;
+  background-image: linear-gradient(to right, rgb(185, 185, 185) , rgb(65, 65, 65));
+  background-size: cover  ;
+  background-position: center;
+  color: white;
+}
+
+h1{
+  font-size: 50px;    
+}
+
+h2 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.textosize25 {
+  font-size: 30px;
+}
+
+/*LOGIN E CADASTRO*/
+
+.btncadastro {
+  margin-top: 5%;
+  border-radius: 5px;
+  border-style: none;
+  width: 200px;
+  height: 50px;
+  font-size: x-large;
+}
+
+
+.btnlogin {
+  margin-top: 5%;
+  border-radius: 5px;
+  border-style: none;
+  width: 150px;
+  height: 50px;
+  font-size: x-large;
+}
+
+input {
+  width: 70%;
+  height: 50px;
+  font-size: x-large;
+}
+
+input[type=submit] {
+  border-radius: 5px;
+  border-style: none;
+  width: auto;
+  height: 30px;
+  border: solid;
+}
+
+input[type=email], input[type=password], input[type=name]{
+  border-radius: 10px;
+  border-style: solid;
+  width: 70%;
+  height: 50px;
+}
+
+input[type=text]{
+  width: 100%;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 1% 10% 1% 10%;
+}
+
+.txtlogin {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  line-height: 90px;
+}
+
+.txtcadastro {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  line-height: 90px;
+}
+
+.alinhar input:not(:last-child){
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.alinhara input:not(:last-child){
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.logo_cadastro {
+  transform: translate(0% , 0%);
+  float: right;
+}
+
+.logo_login {
+  transform: translate(0% , 0%);
+  float: right;
+}
+
+.boxformula {
+  background-color: rgb(150, 150, 150);
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 100px;
+  width: 35%;
+  height: 90%;
+  text-align: center;
+  transform: translate(0% , 15%);
+}
+
+.boxformula1 {
+  background-color: rgb(150, 150, 150);
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 100px;
+  width: 35%;
+  height: 90%;
+  text-align: center;
+  transform: translate(0% , 15%);
+}
+
+.texto {
+  padding-top: 5%;
+  float: left;
+}
+
+/*PAGINA INICIAL*/
+
+.Inicial_imagem { 
+  margin-top: 1%;
+  margin-right: 3px;
+  width: 100%;
+}
+
+  
+.MVV {
+  background-color: white;
+}
+  
+.caixas {
+  width: 80%;
+}
+
+.imagem-a {
+  height: 20%;
+  width: 20%;
+}
+
+.mvvc {
+  border: solid 3px #000000;
+  width:37%;
+  font-size: 20px;
+  text-align: justify;
+  border-radius:10px;
+  text-align: center;
+  margin: 2%; 
+} 
+
+.texto2 {
+  padding-top: 12%;
+  position: absolute ; left: 15%;
+  position: absolute; right: 51%;
+  float: left;
+}
+
+.box2 {
+    background-color: rgb(0, 0, 0);
+    border-style: none;
+    border-radius: 15px;
+    width: 30%;
+    height: 100%;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: oldnews;
+    font-size: 20px;
+    color: white;
+  }
+
+.imagem_inicial {
+  float: right;
+  object-fit: cover;
+  height: 25%;
+  width: 50%;
+}
+
+.imagemtamanho {
+  width: 100%;
+  height: 900px;
+}
+
+
+.buttonsn {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
+
+.buttonsn:hover {
+  cursor: pointer;
+}
+
+
+
+/*BARRA DE NAVEGAÇÃO*/
+
+#menuh {
+  display: block;
+  border-style: outset;
+  background-color: white;
+  position: sticky;
+  top: 0%;
+}
+
+#menuh ul{
+  list-style: none;
+  padding: 0s;
+  padding-top: 5px;
+  max-width: 100%;
+  min-height: 100px;
+  font-size: 30px;
+}
+
+#menuh ul li{
+  display: inline;
+  padding: 30px;
+}
+
+#menuh ul li a{
+  display: inline-block;
+  padding: 25px;
+  color: black;
+  text-decoration: none;
+  border-radius: 10%;
+  transition: background .6s;
+}
+
+#menuh ul li a:hover{
+  background-color: rgb(110, 110, 110);
+  color: white;
+}
+
+.imagem_logo {
+  float: left;
+}
+
+.imagem_logo_inicial {
+  
+  float: left;
+}
+
+.imagem {
+  float: right;
+  position: relative;
+}
+
+.imagem_empresa_login {
+  float: right;
+  position: absolute;
+}
+
+.saida {
+  float: right;
+  margin-top: -30px;
+}
+
+
+
+
+/*RODAPÉ*/
+
+.espaco {
+  margin-top: 450px;
+}
+
+.rodape {
+  display: flex;
+  position: flex;
+  bottom: 0;
+  background-color: #000000;
+  color: #ffffff;
+  width: 99%; 
+  text-align: center;
+  line-height: 15px;
+  font-size: 25px;
+}
+
+.rodapepo {
+  display: flex;
+  position: flex;
+  bottom: 0;
+  background-color: #000000;
+  color: #ffffff;
+  width: 99%; 
+  text-align: center;
+  line-height: 100%;
+  font-size: 25px;
+}
+
+.imagem_empresa_inicial {
+  position: flex;
+  margin-right: -4%;
+}
+
+footer{
+  width: 100%;
+  min-height: 250px;
+  background: #000000;
+  display: flex;
+}
+
+footer .boxs{
+  width: 20%;
+  min-height: 150px;
+  padding: 5px;
+}
+
+footer .boxs:nth-child(4){
+  width: auto;
+}
+
+.boxs h4 {
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.boxs h6 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+
+.boxs ul li {
+  list-style: none;
+  color: #ffffff;
+  margin-top: 10%;
+  width: 345px;
+  height: 29px;
+}
+
+.boxs ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  width: 345px;
+  height: 29px;
+  text-align: left;
+}
+
+.boxs ul li a:hover{
+  color: #c9c9c9;
+
+}
+
+.boxs p{
+  color: #ffffff;
+  text-align: justify;
+  font-size: 15px;
+}
+
+/*PAGINA VIDEOS*/
+.adad {
+  display: flex;
+  width: 100%;
+  margin: 0 ;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.aaaaa {
+  width: auto;
+}
+
+.tha {
+  border: 1px solid black;
+  border-radius: 2%;
+  border-style: none solid solid none;
+  text-align: center;
+  width: 100%;
+  float: left;
+  border-top: 500px;
+  margin-bottom: 50px;
+  font-family: heycomic;
+}
+
+.video {
+  width: 450px;
+  height: 290px;
+  margin-bottom: 10%;
+}
+
+.videostamanho {
+  border: 10px solid #fff; /* Adjust border style and color as needed */
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.textovideos {
+  font-size: 200%;
+  word-wrap: break-word;
+  width: 90%;
+  height: 35%;
+  margin-bottom: 50px;
+  font-family: heycomic;
+}
+
+/*POLITICA DE PRIVACIDADE*/
+
+.fonte {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.voltar a{
+  border-radius: 15px;
+  border-style: solid;
+  width: 25%;
+  height: 100px; 
+  background-color: white; 
+  color: black; 
+  font-size: 35px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .6s;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.voltar a:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 15px;
+  border-style: solid;
+}
+
+/*JOGOS*/
+
+.jooj {
+  display: flex; 
+  margin-top: 5%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.jogo {
+  border-radius: 5px;
+  width: 25%;
+  height: 350px;
+  margin-left: 3%;
+  text-align: center;
+}
+
+.jogo a:hover {
+background-color: #000000;
+}
+
+.jogoe {
+  border-radius: 5px;
+  width: 25%;
+  height: 350px;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.jogoi {
+  border-radius: 5px;
+  width: 25%;
+  height: 350px;
+  margin-right: 15%;
+  text-align: center;
+}
+
+.p {
+  font-size: 25px;
+  color: #000000;
+  font-family: oldnews;
+}
+
+.p2 {
+  font-size: 25px;
+  color: #000000;
+  font-family: oldnews;
+}
+
+/*LEMBRETE*/
+
+.lembretes-expirados {
+    color: red; 
+  }
+
+  input, textarea {
+      width: 50%;
+      height: 200px;
+      font-size: 35px;
+      margin: 10px auto; 
+      display: block; 
+  }
+
+  input[type=datetime-local] {
+    width: 25%;
+    height: 5%;
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 2%;
+    margin: 10px auto;
+  }
+
+  input[type=submit] {
+      border-radius: 5px;
+      border-style: solid;
+      width: 25%;
+      height: 100px; 
+      background-color: white; 
+      color: black; 
+      font-size: 35px;
+      margin: 20px auto;
+      display: block;
+      cursor: pointer;
+      font-family: oldnews;
+  }
+
+  input[type=submit]:hover {
+      background-color: black;
+      color: white;
+  }
+
+  input[type=text]{
+      width: 30%;
+      height: 5%;
+      border-radius: 5px;
+      border-style: solid;
+      padding-left: 2%;
+      margin: 10px auto;
+  }
+
+  .lembrete {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-right: 50%;
+      margin-left: 2%;
+      width: 35%;
+  }
+
+  .texto_lembrete {
+      width: auto;
+      display: flex;
+      padding-right: 60%;
+      padding-left: 1%;
+  }
+
+  .link-button1 {
+      display: inline-block;
+      padding: 0.5em 1em; 
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      border-style: solid;
+      font-size: 35px; 
+      font-family: oldnews;
+  }
+
+  .link-button1:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .centro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .titulo_lembrete {
+      margin-right: 10.5%;
+      width: auto;
+      font-family: oldnews;
+  }
+
+  .naoencontrado {
+    font-size: xx-large;
+    font-family: oldnews;
+  }
+
+  .lembretes {
+    font-size: 130%;
+    width: 20%;
+    height: auto;
+    background-color: #ffff99; 
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    word-wrap: break-word;
+    cursor: grab; 
+    position: absolute; 
+  }
+
+  .lembretes:hover {
+    transform: scale(1.05); 
+  }
+
+  .lembretes-content {
+    padding: 10px;
+  }
+
+  .excluir {
+    font-size: 24px; 
+    position: absolute;
+    top: 2px; 
+    left: 10px; 
+    cursor: pointer;
+  }
+
+
+.mensagem-lembrete {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  display: none;
+}
+
+

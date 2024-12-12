@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("img/velha.png");
+            border-image-width: 20px;
+        background-size: cover;
+        }
+        #board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 5px;
+            margin: 20px auto;
+        }
+
+        .texto {
+            font-size: 25px;
+            text-align: center; 
+            position: fixed;
+            color: #000000;
+            font-family: cursive;
+            transform: translate(0%, -100%);
+            
+        }
+
+        .ccr {
+            background: #D8D8D8 ;
+            color: #D8D8D8;
+            background-color:#D8D8D8;
+            transform: translate(0, -300%);
+        }
+        .cor {
+            background: #D8D8D8 ;
+            color: #D8D8D8;
+            background-color:#D8D8D8;
+            transform: translate(0, -320%);
+        }
+        
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center; 
+    position: flex;
+}
+
+.line {
+    width: 100%; /* Largura da linha (100% da largura do elemento pai) */
+    height: 2px; /* Altura da linha */
+    background-color: #000; /* Cor de fundo da linha (preto no exemplo) */
+}
+
+.button{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    text-align: left;
+}
+
+.cell {   width: 100px;
+            height: 100px;
+            font-size: 24px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: #eee;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cell:hover {
+            background-color: #ccc;
+        }
+        .winner {
+            color: green;
+        }
+        .draw {
+            color: orange;
+       }
